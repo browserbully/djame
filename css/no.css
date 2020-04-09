@@ -1,0 +1,289 @@
+/*
+  -- GLOBAL --
+*/
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  background-image: url("../img/djame.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -24rem 50rem;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans", Helvetica, Arial;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+
+  color: #414446;
+}
+
+/*
+  -- HEADLINES --
+*/
+h1, .h1 {
+  font-size: 6rem;
+  font-weight: 600;
+
+  letter-spacing: -2.7px;
+  line-height: 4rem;
+  
+  display: inline-block;
+
+  background-color: #feff9c;
+
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 14rem;
+    line-height: 6rem;
+  }
+}
+
+h1 span.small {
+  font-weight: 300;
+  color: #666;
+  font-size: 1.3rem;
+}
+
+h2, .h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 3.4rem;
+
+  padding-left: 16px;
+
+  border-left: 8px solid #ff7eb9;
+}
+
+h2.section-header {
+  margin-top: 12rem;
+}
+
+h3, .h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h3.section-header {
+  border-top: 1px solid #c7e5e6;
+  
+  padding-top: 1rem;
+  margin-top: 6rem;
+
+  color: #999;
+}
+
+h4, .h4 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  
+  margin-bottom: .5rem;
+}
+
+h4 span {
+  font-weight: 300;
+  font-size: 1.8rem;
+  font-style: italic;
+}
+
+h5, .h5 {
+  font-size: 1.6rem;
+  
+  margin-top: 1.3rem;
+  margin-bottom: -1rem;
+}
+
+/* -- OTHER ELEMENTS -- */
+a {
+  color: #222425;
+}
+
+nav a,
+nav span {
+  /* color: #c1c8d1; */
+}
+
+nav .current {
+  border: 1px solid;
+  border-radius: 1px;
+  padding: 0 .35em;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  display: block;
+
+  text-align: right;
+
+  padding-bottom: 1rem;
+  
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+  nav li {
+    font-size: 1.4rem;
+    text-align: left;
+
+    padding-left: 2rem;
+
+    display: inline-block;
+  }
+}
+
+address {
+  font-style: normal;
+  font-size: 1.2rem;
+  
+  margin-bottom: 3rem;
+}
+
+#logo {
+  display: inline-block;
+  width: 60px;
+
+  background-color: black;
+  vertical-align: middle;
+
+  clip-path: circle(30px at center);
+  -webkit-clip-path: circle(30px at center);
+}
+
+/*
+  -- CLASSES --
+*/
+.dim {
+  color: #c1c8d1;
+}
+
+.highlight,
+.highlight-alt {
+  position: relative;
+}
+
+.highlight:after,
+.highlight-alt:after {
+  content: "";
+  position: absolute;
+  width: 3.5em;
+  height: .75em;
+  top: .85em;
+  left: .25em;
+  background-color: #c7e5e6;
+  opacity: .3;
+}
+
+.highlight-alt:after {
+  background-color: #feff9c;
+}
+
+.large-text-shadow {
+  text-shadow: .075em .075em 1.25rem #ccc ;
+}
+
+span.intro {
+  font-size: 2rem;
+  padding-left: .4rem;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  span.intro {
+    font-size: 3.2rem;
+    padding-left: 33rem;
+  }
+}
+
+p.intro {
+  padding-left: .5rem;
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 768px) {
+  p.intro {
+    /* padding-left: 33.2rem; */
+    font-size: 1.5rem;
+  }
+}
+
+ul.intro {
+  padding-left: 8em;
+}
+
+.selfie {
+  position: relative;
+  left: 1px;
+  top: 3px;
+
+  width: 200px;
+  clip-path: circle(100px at center);
+  -webkit-clip-path: circle(100px at center);
+}
+
+.selfie-frame {
+  display: none;
+
+  position: relative;
+  left: -32px;
+  background-color: #c7e5e6;
+  
+  width: 202px;
+  clip-path: circle(101px at center);
+  -webkit-clip-path: circle(101px at center);
+}
+
+@media only screen and (min-width: 768px) {
+  .selfie-frame {
+      display: inline-block;
+  }
+}
+
+
+.img-frame {
+  background-color: rgba(199,229,230,.3);
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  left: 8rem;
+  padding: 6rem 16rem 3rem 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-frame {
+    left: -8rem;
+  }
+}
+
+.img-frame img {
+  width: 200%;
+  border-bottom: 1px solid #c7e5e6;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-frame img {
+    width: 600px;
+    padding: 2rem 3rem 0 1rem;
+  }
+}
