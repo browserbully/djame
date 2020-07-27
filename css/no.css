@@ -283,7 +283,7 @@ ul.intro {
 
 @media only screen and (min-width: 768px) {
   .img-frame img {
-    width: 600px;
-    padding: 2rem 3rem 0 1rem;
+    width: 150%;
+    padding: 2rem 0 0 0;
   }
 }
